@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This file is part of training_health module. -->
+<form>
+    <label name="name"/>
+    <field name="name"/>
+    <label name="license_number"/>
+    <field name="license_number"/>
+    <label name="specialty"/>
+    <field name="specialty"/>
+    <label name="state"/>
+    <field name="state"/>
+    <label name="start_date"/>
+    <field name="start_date"/>
+    <separator name="patients" colspan="4"/>
+    <field name="patients" colspan="4"/>
+</form>

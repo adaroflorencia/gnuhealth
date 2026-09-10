@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- This file is part of training_health module. -->
+<tree>
+    <field name="name"/>
+    <field name="license_number"/>
+    <field name="specialty"/>
+    <field name="state"/>
+    <field name="start_date"/>
+</tree>

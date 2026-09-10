@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- This file is part of training_health module. -->
+<tree>
+    <field name="code"/>
+    <field name="name"/>
+    <field name="birth_date"/>
+    <field name="age"/>
+    <field name="professional"/>
+    <field name="active"/>
+</tree>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tryton>
+    <data>
+
+        <!-- ==================== Root Menu ===================== -->
+        <menuitem name="Training Health" sequence="1"
+            id="menu_training_health"/>
+
+        <!-- ==================== Patient ==================== -->
+        <record model="ir.ui.view" id="patient_form_view">
+            <field name="model">training_health.patient</field>
+            <field name="type">form</field>
+            <field name="name">patient_form</field>
+        </record>
+        <record model="ir.ui.view" id="patient_list_view">
+            <field name="model">training_health.patient</field>
+            <field name="type">tree</field>
+            <field name="name">patient_list</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_patient_form">
+            <field name="name">Patients</field>
+            <field name="res_model">training_health.patient</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_patient_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="patient_list_view"/>
+            <field name="act_window" ref="act_patient_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_patient_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="patient_form_view"/>
+            <field name="act_window" ref="act_patient_form"/>
+        </record>
+
+        <menuitem name="Patients" sequence="10"
+            action="act_patient_form" id="menu_patient_form"
+            parent="menu_training_health"/>
+
+        <!-- ================== Professional =================== -->
+        <record model="ir.ui.view" id="professional_form_view">
+            <field name="model">training_health.professional</field>
+            <field name="type">form</field>
+            <field name="name">professional_form</field>
+        </record>
+        <record model="ir.ui.view" id="professional_list_view">
+            <field name="model">training_health.professional</field>
+            <field name="type">tree</field>
+            <field name="name">professional_list</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_professional_form">
+            <field name="name">Professionals</field>
+            <field name="res_model">training_health.professional</field>
+        </record>
+        <record model="ir.action.act_window.view"
+                id="act_professional_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="professional_list_view"/>
+            <field name="act_window" ref="act_professional_form"/>
+        </record>
+        <record model="ir.action.act_window.view"
+                id="act_professional_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="professional_form_view"/>
+            <field name="act_window" ref="act_professional_form"/>
+        </record>
+
+        <menuitem name="Professionals" sequence="20"
+            action="act_professional_form" id="menu_professional_form"
+            parent="menu_training_health"/>
+
+    </data>
+</tryton>

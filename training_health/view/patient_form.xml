@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- This file is part of training_health module. -->
+<form>
+    <label name="code"/>
+    <field name="code"/>
+    <label name="name"/>
+    <field name="name"/>
+    <label name="birth_date"/>
+    <field name="birth_date"/>
+    <label name="age"/>
+    <field name="age"/>
+    <label name="active"/>
+    <field name="active"/>
+    <label name="professional"/>
+    <field name="professional"/>
+    <separator name="notes" colspan="4"/>
+    <field name="notes" colspan="4"/>
+</form>
