@@ -7,10 +7,8 @@ this repository contains the full copyright notices and license terms. -->
         <field name="name" xexpand="1"/>
 
         <label name="dni"/>
-        <field name="dni"/>
+        <field name="dni" xexpand="1"/>
 
-        <label name="observaciones"/>
-        <field name="observaciones" colspan="3" height="100" xexpand="1" yexpand="1"/>
         <label name="tipo_persona"/>
         <field name="tipo_persona" widget="selection"/>
 
@@ -19,6 +17,12 @@ this repository contains the full copyright notices and license terms. -->
 
         <label name="code"/>
         <field name="code"/>
+
+        <group col="-1" colspan="2">
+            <label name="observaciones"/>
+            <field name="observaciones" colspan="2" height="50" xexpand="1" yexpand="1"/>
+        </group>
+
         <group col="-1" colspan="2" id="checkboxes">
             <label name="active"/>
             <field name="active" xexpand="0" width="25"/>
@@ -27,6 +31,7 @@ this repository contains the full copyright notices and license terms. -->
         <label name="replaced_by"/>
         <field name="replaced_by"/>
     </group>
+
     <notebook colspan="6">
         <page string="General" id="general">
             <field name="addresses" mode="form,tree" colspan="4"
