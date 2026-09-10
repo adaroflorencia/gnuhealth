@@ -47,6 +47,11 @@ class Party(
         help="Numero de documento."
     )
 
+    phone = fields.Char(
+        'Phone Number',
+        help='Patient phone number'
+    )
+
     observaciones = fields.Text(
     "Observaciones",
     help="Observaciones adicionales sobre la persona u organización.")

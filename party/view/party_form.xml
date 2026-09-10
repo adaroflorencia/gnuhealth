@@ -9,6 +9,9 @@ this repository contains the full copyright notices and license terms. -->
         <label name="dni"/>
         <field name="dni"/>
 
+        <label name="phone"/>
+        <field name="phone"/>
+
         <label name="observaciones"/>
         <field name="observaciones" colspan="3" height="100" xexpand="1" yexpand="1"/>
         <label name="tipo_persona"/>
